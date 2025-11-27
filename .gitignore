@@ -1,0 +1,10 @@
+# Ambientes e caches
+venv/
+__pycache__/
+*.pyc
+
+# Arquivos gerados
+modelo_carros.pkl
+
+# Outros
+.DS_Store
