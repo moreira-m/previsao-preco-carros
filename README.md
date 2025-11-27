@@ -1,8 +1,5 @@
-# Precificacao de carros com FIPE 2022 (KISS)
 
-Projeto direto: treina uma regressao linear simples usando `data/fipe_2022.csv` (sem coluna de motor/cilindrada) e expoe um app Streamlit para estimar o preco em reais.
-
-## Passo a passo rapido
+## Passo a passo
 1. Crie e ative o ambiente: `python3 -m venv venv && source venv/bin/activate`
 2. Instale dependencias: `pip install -r requirements.txt`
 3. Rode o treino: `python train_model.py` (gera `modelo_carros.pkl` e mostra MAE/RMSE/R2)
@@ -14,4 +11,3 @@ Projeto direto: treina uma regressao linear simples usando `data/fipe_2022.csv` 
 - Converte categorias com `pandas.get_dummies` (sem `drop_first`) e divide treino/teste.
 - Treina uma `LinearRegression` no `log1p` do preco para lidar com valores altos e reverte com `expm1` na previsao.
 - O app aplica o mesmo `get_dummies`, alinha colunas e retorna o valor em R$.
-# prev-precos-carros
